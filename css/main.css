@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #21243d;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Header */
+.main-navigation {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.main-navigation__items {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+  padding: 27px 0;
+}
+
+.main-navigation__item {
+  display: inline-block;
+}
+
+.main-navigation__item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.main-navigation__item a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+/* Main section */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 148px 0 71px;
+}
+.main-section__info {
+  max-width: 500px;
+}
+.main-section__introduction {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 25px;
+}
+
+.main-section__description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.main-section__action {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+  background-color: #ff6464;
+}
+
+.main-section__action:hover {
+  cursor: pointer;
+}
+
+.main-section__image {
+  position: relative;  
+}
+
+.main-section__image img {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.main-section__image-shadow {
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #EDF7FA;
+}
+
+/* Posts section */
+.posts {
+  padding: 21px 60px 32px;
+  background-color: #edf7fa;
+}
+
+.posts .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.posts-title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.posts-card__info {
+  display: flex;
+}
+
+.posts-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #00a8cc;
+  flex: 1;
+  text-align: right;
+  text-decoration: none;
+}
+
+.posts-cards {
+  display: flex;
+}
+
+.posts-card:first-child {
+  margin-right: 20px;
+}
+
+.posts-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 23px 28px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.posts-card__title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.posts-card__date {
+  padding-right: 30px;
+  border-right: 1px solid #000;
+}
+
+.posts-card__type {
+  padding-left: 30px;
+}
+
+.posts-card__description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 19px;
+}
+
+/* Features section */
+.features {
+  padding: 27px 0 83px;
+}
+
+.features-title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 38px;
+}
+
+.feature {
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E0E0E0;
+  margin-top: 31px;
+}
+
+.feature-image {
+  margin-right: 18px;
+}
+
+.feature-image img {
+  display: block;
+  border-radius: 6px;
+}
+
+.feature-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.feature-info {
+  display: flex;
+  align-items: center;
+}
+
+.feature-date {
+  display: inline-block;
+  font-weight: 900;
+  padding: 0 10px;
+  color: #fff;
+  background-color: #142850;
+  border-radius: 16px;
+  margin-right: 26px;
+}
+
+.feature-type {
+  font-size: 20px;
+  font-weight: 400;
+  color: #8695a4;
+}
+
+.feature-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 18px;
+}
+
+/* Footer */
+.footer {
+  padding: 51px 0 54px;
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 26px;
+}
+
+.footer__social:not(:last-child) {
+  margin-right: 35px;
+}
+
+.footer__social img {
+  display: block;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
